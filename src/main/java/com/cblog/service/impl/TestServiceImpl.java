@@ -11,8 +11,13 @@ import java.util.Map;
 @Service
 public class TestServiceImpl implements TestService {
   
-	@Autowired
-	private TestDao testDao;
+
+	TestDao testDao = new TestDao() {
+		@Override
+		public int saveTest(Map<String, Object> map) {
+			return 0;
+		}
+	};
 	
 	@Override
 	public String testMybatis() {

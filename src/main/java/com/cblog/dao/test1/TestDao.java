@@ -5,5 +5,5 @@ import java.util.Map;
 public interface TestDao {
  
 	
-	int saveTest(Map<String, Object> map);
+	// int saveTest(Map<String, Object> map);
 }
