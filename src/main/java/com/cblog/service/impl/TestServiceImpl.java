@@ -10,15 +10,16 @@ import java.util.Map;
 
 @Service
 public class TestServiceImpl implements TestService {
-  
 
-	TestDao testDao = new TestDao() {
-		@Override
-		public int saveTest(Map<String, Object> map) {
-			return 0;
-		}
-	};
-	
+    /*
+    * 报错是因为idea的报错不是程序本身
+    * */
+    @Autowired
+    private TestDao testDao;
+
+    /*
+    * 断点已经进来
+    * */
 	@Override
 	public String testMybatis() {
 		Map<String, Object> map=new HashMap<>();
