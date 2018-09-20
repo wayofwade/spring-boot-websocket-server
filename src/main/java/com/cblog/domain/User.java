@@ -6,6 +6,15 @@ package com.cblog.domain;
 public class User {
     private String userName;
     private String passWard;
+    private Integer uid;
+
+    public Integer getUid() {
+        return uid;
+    }
+
+    public void setUid(Integer uid) {
+        this.uid = uid;
+    }
 
     public String getUserName() {
         return userName;

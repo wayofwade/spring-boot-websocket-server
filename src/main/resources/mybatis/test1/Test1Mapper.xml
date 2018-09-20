@@ -6,6 +6,7 @@
     
     <resultMap id="BaseResultMap" type="com.cblog.domain.User">
         <!--主键 <id column="id" property="id" jdbcType="INTEGER"/> -->
+        <id column="UID" property="uid" jdbcType="INTEGER"/>
         <result column="USERNAME" property="userName" jdbcType="VARCHAR"/>
         <result column="PASSWORD" property="passWord" jdbcType="VARCHAR"/>
     </resultMap>
@@ -16,7 +17,7 @@
     
     
     <insert id="saveTest"  parameterType="java.util.Map">
-    insert into USERS(USERNAME,PASSWORD) values(#{userName},#{passWord})
+    insert into USERS(USERNAME,PASSWORD,UID) values(#{userName},#{passWord},${1})
     </insert>
 
 
