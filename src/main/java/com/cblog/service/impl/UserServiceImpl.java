@@ -22,9 +22,8 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public int saveUserInfo(Map<String,Object> map) {
 		User user = new User();
-		user.setUserName((String) map.get("userName"));
-		user.setPassWord((String) map.get("passWord"));
-		user.setUid(91);
+		user.setUserName((String) map.get("username"));
+		user.setPassWord((String) map.get("password"));
 		int a = userDao.saveUser(user);
 		return a;
 	}
