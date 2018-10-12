@@ -16,7 +16,7 @@ public class SchedulerTask {
     private final Logger LOG = LoggerFactory.getLogger(getClass());
     @Scheduled(fixedRate = 5000)
     private void dateTask() {
-        LOG.info("SchedulerTask2 : " + new Date().toString());
+        LOG.info("SchedulerTask2s : " + new Date().toString());
         System.out.println("hello world form quartZ");
     }
 }
