@@ -56,6 +56,8 @@
 			<artifactId>druid</artifactId>
 			<version>1.1.10</version>
 		</dependency>
+		<!--数据库相关-->
+
 
 		<!--发送邮件的-->
 		<dependency>
@@ -63,6 +65,9 @@
 			<artifactId>mail</artifactId>
 			<version>1.4.7</version>
 		</dependency>
+		<!--发送邮件的-->
+
+
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>
@@ -72,6 +77,16 @@
 			<artifactId>testng</artifactId>
 			<version>RELEASE</version>
 		</dependency>
+
+		<!--定时任务spring-boot2.0之后集合了quartz-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-quartz</artifactId>
+		</dependency>
+		<!--定时任务-->
+
+
+
 	</dependencies>
 
 	<build>
