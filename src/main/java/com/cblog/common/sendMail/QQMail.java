@@ -50,8 +50,8 @@ public class QQMail {
     public static void sendEmail(String toEmailAddress, String emailTitle, String emailContent) throws Exception{
 
         // 825719752
-        toEmailAddress = "825719752@qq.com"; // 对方的qq
-        emailTitle = "尤哥啊，你好";
+        toEmailAddress = "chencongcong@qbb6.com"; // 对方的qq825719752
+        emailTitle = "哈哈哈哈，你好";
         emailContent = "学java学起来--来自java邮件发送";
         Properties props = new Properties();
 
@@ -112,7 +112,7 @@ public class QQMail {
 
         //设置发件人邮箱
         // InternetAddress 的三个参数分别为: 发件人邮箱, 显示的昵称(只用于显示, 没有特别的要求), 昵称的字符集编码
-        msg.setFrom(new InternetAddress(myEmailAccount,"好学堂", "UTF-8"));
+        msg.setFrom(new InternetAddress(myEmailAccount,"chencc", "UTF-8"));
 
         //得到邮差对象
         Transport transport = session.getTransport();

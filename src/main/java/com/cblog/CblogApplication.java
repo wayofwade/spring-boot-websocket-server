@@ -5,10 +5,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+import static java.util.Arrays.asList;
+
 /*1-RestController使这个类成为controller层
 * 2-SpringBootApplication启动这个类就可以访问
 * 3-ComponentScan填写需要扫描的类之前填写com.cblog.controller导致service不能注入
 * 4-@Component
+* galcejdmqzcgbeah
 * ******************主类***************
 * */
 @SpringBootApplication
