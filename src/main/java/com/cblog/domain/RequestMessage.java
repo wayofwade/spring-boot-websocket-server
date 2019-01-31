@@ -1,4 +1,4 @@
-package com.cblog.controller;
+package com.cblog.domain;
 
 /**
  * Created by chencc on 2019/1/30.
